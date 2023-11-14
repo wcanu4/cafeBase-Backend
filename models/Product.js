@@ -8,7 +8,7 @@ const Product = sequelize.define('Product', {
   presentation: DataTypes.STRING,
   cost_price: DataTypes.STRING,
   sale_price: DataTypes.STRING,
-  existence: DataTypes.NUMBER,
+  existence: DataTypes.DECIMAL,
 }, {
   tableName: 'product', // Nombre de la tabla en la base de datos
   timestamps: false, // Deshabilita las marcas de tiempo
